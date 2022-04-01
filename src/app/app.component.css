@@ -1,0 +1,147 @@
+/*************************/
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 70px;
+  align-items: center;
+  justify-content: start;
+  margin: 0 55px;
+
+
+}
+
+.card {
+  min-width: 165px;
+  min-height: 232px;
+  margin-top: 60px;
+  box-shadow: 0 1px 3px #77777729;
+
+  overflow: clip;
+  border-radius: 16px;
+  position: relative;
+}
+
+.card__setting {
+  position: absolute;
+  top: 5px;
+  left: 128px;
+
+  background-color: #F4F4F4;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.card__setting:hover, .card__setting:active {
+  cursor: pointer;
+  background-color: #fffefe;
+
+}
+
+.card__img {
+}
+
+.card__img img {
+  width: 100%;
+  height: 123px;
+
+  max-width: 165px;
+
+
+  object-fit: contain;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card__title {
+  background-color: white;
+  color: #212121;
+  width: 133px;
+  height: 40px;
+
+  text-align: left;
+  font: normal normal bold 14px/20px Open Sans;
+  letter-spacing: 0;
+  text-overflow: ellipsis;
+}
+
+.card__price {
+  width: 133px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  column-gap: 7px;
+}
+
+.price {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 29px;
+  padding: 0 25px;
+
+  background: transparent linear-gradient(242deg, #591FF8 0%, #2D1996 100%) 0 0 no-repeat padding-box;
+  border-radius: 4px;
+
+  font: normal normal 800 14px/16px Open Sans;
+  letter-spacing: 0.42px;
+  color: #FFFFFF;
+  margin-bottom: 2px;
+}
+
+.price__vat {
+  font: normal normal normal 12px/16px Open Sans;
+  letter-spacing: 0.24px;
+  color: #591FF8;
+}
+
+/*************/
+/*card view down*/
+.card__view_down {
+  flex: 1;
+  min-height: 232px;
+  margin-left: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.card__action {
+  margin-bottom: 15px;
+  user-select: none;
+  cursor: pointer;
+
+  color: #212121;
+}
+
+.card__action.go-back {
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px #77777729;
+  font-size: 1.2rem;
+}
+
+.card__action.delete {
+  color: #FF0060;
+}
+
+.card__action img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.card__view_hide {
+  display: none;
+}
